@@ -9,7 +9,6 @@ import com.example.demo.entity.Dept;
 public class DeptDAO_MB {
 	public Dept findByDno(int dno) {
 		return DBManager.findByDno(dno);
-		
-		
 	}
+	
 }

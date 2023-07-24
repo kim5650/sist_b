@@ -6,6 +6,7 @@
 	<select id="findByDno" resultType="deptVO">
 		select * from dept where dno=#{dno}
 	</select>	
+	
 </mapper>
 
 
