@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dao.DeptDAO_JPA;
@@ -23,6 +24,14 @@ public class DeptController {
 		
 		@Autowired
 		private DeptDAO_MB dao_mb;
+		
+		@RequestMapping("updateDept")
+		public ModelAndView update() {
+			ModelAndView mav = new ModelAndView("/dept/update");
+			return mav;
+			
+		}
+		
 	
 		@GetMapping("/dept/list")
 		public void list(Model model) {
