@@ -5,6 +5,6 @@ class  LoginTest
 		if(id.equals("tiger" && pwd.equals("1234"){
 			re = 1;
 		}
-		return re;
+	return re;
 	}
 }
