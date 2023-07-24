@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>부서목록</h2>
+	<hr />
+	<ul>
+		<li th:each="d:${list}">
+			<a th:href="@{'/dept/detail/'+${d.dno}}" 
+				th:text="${d.dno}"></a>
+		</li>
+	</ul>
+</body>
+</html>
